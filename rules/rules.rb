@@ -2,7 +2,6 @@ require 'discord_webhook/dsl'
 
 webhook = DiscordWebhook.new ENV['RUBY_DISCORD_RULES']
 
-#webhook.post do
 webhook.patch(1105291746360967219) do
   content is: "Please have embeds enabled to view the rules"
 
@@ -137,6 +136,14 @@ webhook.patch(1105291746360967219) do
     description is: "You don't have to \"ask to ask\". " \
                     "Please feel free to directly ask your question."
 
+    field name: "How to Ask Good Questions", value: <<~VALUE
+      - Explain the problem
+      - Don't use screenshots
+      - Share what you have tried
+      - State expected vs. actual results
+      - Provide an example
+      - Be polite and patient
+    VALUE
   end
 
   embed title: "Rule 9: Drink Water" do
