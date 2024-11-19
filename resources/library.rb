@@ -27,7 +27,7 @@ webhook.post do
   content is: <<~DOCS
     # :page_facing_up: __Documentation__
     - [Official Ruby Documentation](https://docs.ruby-lang.org)
-    - [ruby-docs.org](https://www.ruby-docs.org/)
+    - [ruby-doc.org](https://www.ruby-doc.org/)
     - [DevDocs.io](https://devdocs.io/ruby/)
     - [rubydoc.info](https://www.rubydoc.info/)
     - [rubyapi.org](https://rubyapi.org/)
